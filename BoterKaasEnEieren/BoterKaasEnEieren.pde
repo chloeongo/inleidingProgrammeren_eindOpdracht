@@ -57,23 +57,23 @@ void mousePressed(){
   }
      
      
-  if(mouseX > 100 && mouseX < 325){ 
+  if(mouseX > 75 && mouseX < 325){ 
     rowX = 1;
   }else if
   (mouseX > 300 && mouseX < 550){
     rowX = 2;
   }else if
-  (mouseX > 575 && mouseX < 750){
+  (mouseX > 575 && mouseX < 800){
     rowX = 3;
   }
   
-  if(mouseY > 170 && mouseY < 300){
+  if(mouseY > 170 && mouseY < 350){
     rowY = 1;
   }else if
-  (mouseY > 400 && mouseY < 510){
+  (mouseY > 360 && mouseY < 590){
     rowY = 2;
   }else if
-  (mouseY > 600 && mouseY < 740){
+  (mouseY > 600 && mouseY < 800){
     rowY = 3;
   }
   
