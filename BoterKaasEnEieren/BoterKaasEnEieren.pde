@@ -82,6 +82,7 @@ void mousePressed(){
     float x = -65 + rowX * (110 + 120); 
     float y = 140 + rowY * (100 + 100); 
 
+        // plaatsen X/O
     if (currentPlayer == 1) {
       fill(145, 35, 35);
       text("X", x, y);
@@ -99,7 +100,7 @@ void mousePressed(){
 
 void checkWinner() {
   char winner = '\0';
-
+          // winnende combinaties
   if ((board[0][0] == board[0][1] && board[0][1] == board[0][2] && board[0][0] != '\0') ||
       (board[1][0] == board[1][1] && board[1][1] == board[1][2] && board[1][0] != '\0') ||
       (board[2][0] == board[2][1] && board[2][1] == board[2][2] && board[2][0] != '\0') ||
@@ -167,7 +168,8 @@ void resetGame() {
     gameEnded = false;
     drawingFinished = false;
     currentPlayer = 1;
-    
+     
+    // tekent spelbord opnieuw
   fill(250,239,211);
   rect(0,200,900,600);
  
